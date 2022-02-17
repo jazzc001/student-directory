@@ -1,17 +1,17 @@
 students_count = 11
 
 students = [
-    ["Dr. Hannibal Lecter", :november],
-    ["Darth Vader", :november],
-    ["Nurse Ratched", :november],
-    ["Michael Corleone", :november],
-    ["Alex DeLarge", :november],
-    ["The Wicked Witch of the West", :november],
-    ["Teerminator", :november],
-    ["Freddy Krueger", :november],
-    ["The Joker", :november],
-    ["Joffrey Baratheon", :november],
-    ["Norman Bates", :november]
+    {name: "Dr. Hannibal Lecter", cohort: :november},
+    {name: "Darth Vader", cohort: :november},
+    {name: "Nurse Ratched", cohort: :november},
+    {name: "Michael Corleone", cohort: :november},
+    {name: "Alex DeLarge", cohort: :november},
+    {name: "The Wicked Witch of the West", cohort: :november},
+    {name: "Teerminator", cohort: :november},
+    {name: "Freddy Krueger", cohort: :november},
+    {name: "The Joker", cohort: :november},
+    {name: "Joffrey Baratheon", cohort: :november},
+    {name: "Norman Bates", cohort: :november}
 ]
 
 
@@ -21,7 +21,7 @@ def print_header
 end
 
 def print(names)
-  names.each {|name| puts "#{name[0]} (#{name[1]} cohort)"}
+  names.each {|name| puts "#{name[:name]} (#{name[:cohort]} cohort)"}
 end
 
 def print_footer(names)
